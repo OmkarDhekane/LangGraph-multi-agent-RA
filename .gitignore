@@ -1,0 +1,40 @@
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*.pyc.*
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.hypothesis/
+
+# Packaging and build outputs
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+.eggs/
+
+# Coverage reports
+.coverage
+.coverage.*
+htmlcov/
+
+# Tooling and editor state
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Streamlit secrets and local state
+.streamlit/secrets.toml

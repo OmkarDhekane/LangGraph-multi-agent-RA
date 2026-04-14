@@ -1,0 +1,46 @@
+.agent-card {
+    background: #1e1e2e;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 8px 0;
+    border-left: 4px solid #7c3aed;
+}
+
+.metric-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.badge-green {
+    background: #166534;
+    color: #bbf7d0;
+}
+
+.badge-yellow {
+    background: #713f12;
+    color: #fef08a;
+}
+
+.badge-red {
+    background: #7f1d1d;
+    color: #fecaca;
+}
+
+.log-entry {
+    font-family: monospace;
+    font-size: 13px;
+    padding: 4px 8px;
+    border-left: 3px solid #4b5563;
+    margin: 4px 0;
+    background: #111827;
+    border-radius: 0 6px 6px 0;
+}
