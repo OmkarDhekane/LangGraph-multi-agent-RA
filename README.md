@@ -1,6 +1,6 @@
 ## Adaptive Research Assistant — Multi-Agent LangGraph Pipeline
 
-A production-grade multi-agent research assistant built with **LangGraph**, **Gemini 1.5 Flash**, **Tavily Search**, and **Streamlit**. The system uses a **Supervisor → Researcher → Analyst → Critic → Reviser** architecture to deliver citation-backed answers with hallucination detection.
+A production-grade multi-agent research assistant built with **LangGraph**, **gemini-2.5-flash-lite**, **Tavily Search**, and **Streamlit**. The system uses a **Supervisor → Researcher → Analyst → Critic → Reviser** architecture to deliver citation-backed answers with hallucination detection.
 
 ---
 
@@ -59,7 +59,7 @@ START
 | Component | Technology |
 |---|---|
 | Agent orchestration | LangGraph (StateGraph) |
-| LLM | Gemini 1.5 Flash (Google AI) |
+| LLM | gemini-2.5-flash-lite (Google AI) |
 | Web search | Tavily Search API |
 | LLM framework | LangChain |
 | Frontend / Dashboard | Streamlit |
@@ -188,7 +188,7 @@ LangGraph provides a proper state machine with conditional routing, making the c
 **Why a critic-reviser loop?**
 LLMs hallucinate. Having a dedicated critic agent compare draft claims against raw source evidence catches unsupported statements before the final answer is shown. Capped at 2 iterations to bound latency.
 
-**Why Gemini 1.5 Flash?**
+**Why gemini-2.5-flash-lite?**
 Fast, cheap, and strong enough for structured output tasks. The Flash model keeps total pipeline latency under 15 seconds for most queries.
 
 ---
