@@ -1,4 +1,4 @@
-# Adaptive Research Assistant — Multi-Agent LangGraph Pipeline
+## Adaptive Research Assistant — Multi-Agent LangGraph Pipeline
 
 A production-grade multi-agent research assistant built with **LangGraph**, **Gemini 1.5 Flash**, **Tavily Search**, and **Streamlit**. The system uses a **Supervisor → Researcher → Analyst → Critic → Reviser** architecture to deliver citation-backed answers with hallucination detection.
 
